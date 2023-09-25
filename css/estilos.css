@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+/**************************************
+******** general style ****************
+***************************************/
+.contenedor {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/**************************************
+******** header styles ****************
+***************************************/
+header, footer {
+  background-color: #5569dc;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+  transition: all .2s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(253, 195, 124);
+}
+
+/**************************************
+******** section banner-image *********
+***************************************/
+.banner-principal {
+  display: flex;
+}
+
+.banner-image {
+  background-image: url(../images/banner_principal.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 120px;
+}
+
+.banner-image p {
+  font-family: 'Inter', sans-serif;
+  font-size: 26px;
+  letter-spacing: 10px;
+  font-weight: 300;
+}
+
+.banner-image h1 {
+  font-size: 90px;
+}
+
+.banner-image h3 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}
+
+/****************************************
+******** section banner-information *****
+*****************************************/
+.banner-information {
+  background-color: #5569dc;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.banner-information div {
+  text-align: center;
+}
+
+.my-photo {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.banner-information h3 {
+  font-size: 1.9em;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.inter-font {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.education-title {
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+
+.contact-method {
+  line-height: 25px;
+}
+
+.socials {
+  margin-top: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  color: white;
+  transition: all .2s ease;
+}
+
+.socials a:hover {
+  color: rgb(253, 195, 124);
+}
+
+/**************************************
+******** section my-profile ***********
+***************************************/
+.my-profile, .contact {
+  background-color: #EEF0FB;
+  padding: 80px 0;
+}
+
+.my-profile p {
+  color: #5e5e5e;
+  font-family: 'Inter', sans-serif;
+  line-height: 40px;
+}
+
+/**************************************
+******** generals styles **************
+***************************************/
+.section-title {
+  color: #566ADC;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-family: 'Inter', sans-serif;
+  color: #566ADC;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+/********************************************
+******** section educations-experiences *****
+*********************************************/
+.education-experience {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-family: 'Inter', sans-serif;
+}
+
+.skills-languages {
+  padding: 80px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.content-education-experience {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.education, .experience {
+  margin-bottom: 50px;
+}
+
+.education-time {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.education p:not(.education-time) {
+  line-height: 28px;
+}
+
+/**************************************
+******** section skills-languages *****
+***************************************/
+.skills-languages-description {
+  width: 40%;
+}
+
+.principal-wrap-lines {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wrap-lines {
+  display: flex;
+  width: 60%;
+}
+
+.line1 {
+  margin: 20px 0;
+  border: 2px solid #1b00c5;
+}
+
+.line2 {
+  margin: 20px 0;
+  border: 2px solid #cecece;
+}
+
+.line1-analysis {
+  width: 60%;
+}
+
+.line2-analysis {
+  width: 40%;
+}
+
+.line1-drafting, .line1-marketing {
+  width: 95%;
+}
+
+.line2-drafting, .line1-marketing {
+  width: 5%;
+}
+
+.line1-web {
+  width: 45%;
+}
+
+.line2-web {
+  width: 55%;
+}
+
+.line1-management, .line1-english {
+  width: 80%;
+}
+
+.line2-management, .line2-english {
+  width: 20%;
+}
+
+.line1-socials{
+  width: 85%;
+}
+
+.line2-socials{
+  width: 15%;
+}
+
+.line1-tools {
+  width: 65%;
+}
+
+.line2-tools {
+  width: 35%;
+}
+
+.line-spanish {
+  width: 100%;
+}
+
+.line1-portuguese {
+  width: 75%;
+}
+
+.line2-portuguese {
+  width: 25%;
+}
+
+.separator {
+  width: 30px;
+  margin: 20px 0;
+}
+
+/**************************************
+******** section contact **************
+***************************************/
+.contact-info {
+  display: flex;
+  gap: 30%;
+  margin-bottom: 60px;
+}
+
+.email-phone {
+  font-family: 'Inter', sans-serif;
+  line-height: 35px;
+}
+
+.contact-socials {
+  font-size: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.contact-socials a {
+  color: black;
+  transition: all .2s ease;
+}
+
+.contact-socials a:hover {
+  color: rgb(255, 161, 46);
+}
+
+/**************************************
+******** footer styles **************
+***************************************/
+footer {
+  font-style: italic;
+  padding: 25px 0;
+}
+
+/**************************************
+******** responsive design ************
+***************************************/
+@media(max-width: 869px) {
+  .contenedor {
+    width: 90%;
+  }
+
+  .banner-image {
+    padding-left: 20px;
+  }
+}
+
+@media(max-width: 679px) {
+  .contenedor {
+    width: 96%;
+  }
+
+  .contact-info {
+    gap: 10%;
+  }
+
+  .contact-socials {
+    justify-content: center;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+@media(max-width: 549px) {
+  .banner-image {
+    display: none;
+  }
+
+  .banner-information {
+    width: 100%;
+  }
+  
+  .contact-info {
+    gap: 5%;
+  }
+}
