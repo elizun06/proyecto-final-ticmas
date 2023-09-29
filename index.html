@@ -9,19 +9,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
   <!-- Mis estilos -->
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  <div id="start"></div>
   <header>
     <div class="contenedor">
       <nav>
         <ul>
-          <li><a href="#">Sobre mí</a></li>
-          <li><a href="#">Formación y Experiencia</a></li>
-          <li><a href="#">Aptitudes e Idiomas</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#start">Inicio</a></li>
+          <li><a href="#about-me">Sobre mí</a></li>
+          <li><a href="#formation">Formación y Experiencia</a></li>
+          <li><a href="#skills">Aptitudes e Idiomas</a></li>
+          <li><a href="#contact-me">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -59,7 +62,7 @@
       </article>
     </section>
 
-    <section class="my-profile">
+    <section class="my-profile" id="about-me">
       <div class="contenedor">
         <h2 class="section-title">Sobre mí</h2>
         <h3 class="section-subtitle">MI PERFIL</h3>
@@ -69,7 +72,7 @@
       </div>
     </section>
 
-    <section class="education-experience">
+    <section class="education-experience" id="formation">
       <div class="contenedor content-education-experience">
         <article>
           <div>
@@ -78,20 +81,20 @@
           </div>
   
           <div class="education">
-            <p class="education-time">2015 - 2020</p>
+            <p class="education-time"><i class="far fa-calendar-alt"></i> 2015 - 2020</p>
             <p>Licenciatura en Marketing y Comercio Internacional</p>
             <p>Universidad de Salamanca, España</p>
             <p>Nota media: 9.5 / 10</p>
           </div>
   
           <div class="education">
-            <p class="education-time">2013 - 2015</p>
+            <p class="education-time"><i class="far fa-calendar-alt"></i> 2013 - 2015</p>
             <p>Programa de Estudios Internacionales y Culturales</p>
             <p>Universidad John Marco de Roma, Italia</p>
           </div>
   
           <div class="education">
-            <p class="education-time">2005 - 2010</p>
+            <p class="education-time"><i class="far fa-calendar-alt"></i> 2005 - 2010</p>
             <p>Instituto de Educación Secundaria José García Lorca</p>
             <p>Graduada con honores</p>
           </div>
@@ -104,24 +107,24 @@
           </div>
   
           <div class="experience">
-            <p class="education-time">Sep. 2021 - Actualidad</p>
+            <p class="education-time"><i class="far fa-calendar-alt"></i> Sep. 2021 - Actualidad</p>
             <p>Eureka Consulting. Consultora Junior de Marketing</p>
           </div>
           
           <div class="experience">
-            <p class="education-time">May. 2019 - Ago. 2021</p>
+            <p class="education-time"><i class="far fa-calendar-alt"></i> May. 2019 - Ago. 2021</p>
             <p>Producciones Sterling. Becaria de Marketing</p>
           </div>
           
           <div class="experience">
-            <p class="education-time">Mar. 2018 - Sep. 2018</p>
+            <p class="education-time"><i class="far fa-calendar-alt"></i> Mar. 2018 - Sep. 2018</p>
             <p>Fundación Universidad de Salamanca. Asesora Comercial</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="skills-languages">
+    <section class="skills-languages" id="skills">
       <div class="contenedor">
         <div>
           <h2 class="section-title">Aptitudes e Idiomas</h2>
@@ -213,14 +216,38 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact-me">
       <div class="contenedor">
         <article class="contact-info">
-          <div class="section-title">Me encantaría saber de ti.</div>
+          <div class="form">
+            <form action="#">
+              <div>
+                <label for="nya">Nombre y Apellido</label>
+                <input type="text" name="nya" id="nya" required="required">
+              </div>
+              <div>
+                <label for="mail">E-mail</label>
+                <input type="email" name="mail" id="mail" required="required">
+              </div>
+              <div>
+                <label for="msg">Mensaje</label>
+                <textarea name="msg" id="msg" rows="5" cols="10" required="required"></textarea>
+              </div>
+              <div>
+                <input type="submit" class="button" value="Enviar mensaje" onsubmit="sendMessage()">
+              </div>
+            </form>
+          </div>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.751459630899!2d-58.19594369014282!3d-26.17222267700074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945caf60e12cb449%3A0x57878dc15dca2dfd!2sAv.%20Italia%201946%2C%20P3600%20Formosa!5e0!3m2!1ses-419!2sar!4v1695951874782!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <!-- <div class="section-title">Me encantaría saber de ti.</div>
           <div class="email-phone">
             <p>info@misitio.com</p>
             <p>Tel: 914-123-456</p>
-          </div>
+          </div> -->
         </article>
   
         <article>
@@ -243,7 +270,10 @@
     </div>
   </footer>
 
+  <div class="up" id="up"><a href="#start">^</a></div>
+
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
